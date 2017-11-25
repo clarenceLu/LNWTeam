@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B237C45D1FC9CD1900C39C55 /* btn_login.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C45C1FC9CD1900C39C55 /* btn_login.png */; };
+		B237C45D1FC9CD1900C39C55 /* btn_login.png in Rhesources */ = {isa = PBXBuildFile; fileRef = B237C45C1FC9CD1900C39C55 /* btn_login.png */; };
 		B237C4611FC9D23A00C39C55 /* bg_textField.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4601FC9D23900C39C55 /* bg_textField.png */; };
 		B237C4631FC9F7AA00C39C55 /* refuseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4621FC9F7AA00C39C55 /* refuseBtn.png */; };
 		B237C4651FC9F7CC00C39C55 /* btn_jump.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4641FC9F7CC00C39C55 /* btn_jump.png */; };
@@ -26,7 +26,6 @@
 		C4670FAF1FC92E9900B59930 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4670FAE1FC92E9900B59930 /* AppDelegate.m */; };
 		C4670FB11FC92E9900B59930 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C4670FB01FC92E9900B59930 /* art.scnassets */; };
 		C4670FB41FC92E9900B59930 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4670FB31FC92E9900B59930 /* ViewController.m */; };
-		C4670FB71FC92E9900B59930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4670FB51FC92E9900B59930 /* Main.storyboard */; };
 		C4670FB91FC92E9900B59930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4670FB81FC92E9900B59930 /* Assets.xcassets */; };
 		C4670FBC1FC92E9900B59930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4670FBA1FC92E9900B59930 /* LaunchScreen.storyboard */; };
 		C4670FBF1FC92E9900B59930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4670FBE1FC92E9900B59930 /* main.m */; };
@@ -76,6 +75,9 @@
 		C46710591FC9362900B59930 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C46710451FC9362900B59930 /* UIView+WebCacheOperation.m */; };
 		C467105A1FC9362900B59930 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C46710491FC9362900B59930 /* UIButton+WebCache.m */; };
 		C46710781FC9368F00B59930 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C46710771FC9368F00B59930 /* GTMBase64.m */; };
+		C467107B1FC943DE00B59930 /* Justin Jesso-Stargazing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C467107A1FC943DE00B59930 /* Justin Jesso-Stargazing.mp3 */; };
+		C467107E1FC9572100B59930 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C467107D1FC9467600B59930 /* CoreLocation.framework */; };
+		C499A2901FC993C500B570E0 /* arrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C499A28F1FC993C500B570E0 /* arrow.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,7 +109,6 @@
 		C4670FB01FC92E9900B59930 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		C4670FB21FC92E9900B59930 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C4670FB31FC92E9900B59930 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C4670FB61FC92E9900B59930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4670FB81FC92E9900B59930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4670FBB1FC92E9900B59930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4670FBD1FC92E9900B59930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -207,6 +208,9 @@
 		C46710751FC9368F00B59930 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		C46710761FC9368F00B59930 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		C46710771FC9368F00B59930 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		C467107A1FC943DE00B59930 /* Justin Jesso-Stargazing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Justin Jesso-Stargazing.mp3"; sourceTree = "<group>"; };
+		C467107D1FC9467600B59930 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C499A28F1FC993C500B570E0 /* arrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C467107E1FC9572100B59930 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +261,7 @@
 			children = (
 				C4670FAC1FC92E9900B59930 /* LNWTeam */,
 				C4670FAB1FC92E9900B59930 /* Products */,
+				C467107C1FC9467600B59930 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,6 +276,8 @@
 		C4670FAC1FC92E9900B59930 /* LNWTeam */ = {
 			isa = PBXGroup;
 			children = (
+				C499A28E1FC993C500B570E0 /* Image */,
+				C46710791FC943DE00B59930 /* Music */,
 				C46710131FC935A000B59930 /* SystemConfiguration */,
 				C4670FC81FC934AC00B59930 /* Framewrok */,
 				C4670FC51FC92F2B00B59930 /* LoginViewContoller.h */,
@@ -287,7 +295,6 @@
 				C4670FB01FC92E9900B59930 /* art.scnassets */,
 				C4670FB21FC92E9900B59930 /* ViewController.h */,
 				C4670FB31FC92E9900B59930 /* ViewController.m */,
-				C4670FB51FC92E9900B59930 /* Main.storyboard */,
 				C4670FB81FC92E9900B59930 /* Assets.xcassets */,
 				C4670FBA1FC92E9900B59930 /* LaunchScreen.storyboard */,
 				C4670FBD1FC92E9900B59930 /* Info.plist */,
@@ -459,6 +466,30 @@
 			path = Base64;
 			sourceTree = "<group>";
 		};
+		C46710791FC943DE00B59930 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				C467107A1FC943DE00B59930 /* Justin Jesso-Stargazing.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		C467107C1FC9467600B59930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C467107D1FC9467600B59930 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C499A28E1FC993C500B570E0 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				C499A28F1FC993C500B570E0 /* arrow.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -491,6 +522,11 @@
 					C4670FA91FC92E9900B59930 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -534,6 +570,8 @@
 				B237C45D1FC9CD1900C39C55 /* btn_login.png in Resources */,
 				C4670FB71FC92E9900B59930 /* Main.storyboard in Resources */,
 				B237C4611FC9D23A00C39C55 /* bg_textField.png in Resources */,
+				C499A2901FC993C500B570E0 /* arrow.jpg in Resources */,
+				C467107B1FC943DE00B59930 /* Justin Jesso-Stargazing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,14 +640,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C4670FB51FC92E9900B59930 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4670FB61FC92E9900B59930 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C4670FBA1FC92E9900B59930 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -732,6 +762,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TMCHXYN3UH;
 				INFOPLIST_FILE = LNWTeam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.looper.corp.LNWTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -746,6 +777,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TMCHXYN3UH;
 				INFOPLIST_FILE = LNWTeam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.looper.corp.LNWTeam;
 				PRODUCT_NAME = "$(TARGET_NAME)";

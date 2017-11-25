@@ -6,15 +6,14 @@
 //  Copyright © 2017 lujiawei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-
+#import <UIKit/UIKit.h>
 
 @interface LocationManagerData : CLLocationManager <CLLocationManagerDelegate>
 {
-    
+
     CGPoint LocationPoint_xy;
+    float  direction;
 
 }
 
@@ -22,5 +21,6 @@
 -(void)getLocalationPoint;
 
 @property(nonatomic)CGPoint LocationPoint_xy;
-
+@property(nonatomic)float  direction;
 @end
+

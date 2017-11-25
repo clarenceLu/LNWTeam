@@ -10,14 +10,30 @@
 #import "LoginViewContoller.h"
 #import "SelectViewController.h"
 @interface AppDelegate ()<UINavigationControllerDelegate>
+#import "LocationManagerData.h"
 
-@end
 
-@implementation AppDelegate
+
+@implementation AppDelegate 
+
+
+
+//- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+//    //获取最后一个定位数据
+//    CLLocation* location = [locations lastObject];
+//    //依次获取CLLocation中封装的经度、纬度、高度、速度、方向等信息
+//    NSLog(@"经度:%g,纬度:%g,高度:%g,速度:%g,方向:%g",location.coordinate.latitude,location.coordinate.longitude,location.altitude,location.speed,location.course);
+//}
+////定位失败时激发的方法
+//- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+//    NSLog(@"定位失败：%@",error);
+//}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     LoginViewContoller *start = [[LoginViewContoller alloc] init];
 //      SelectViewController *start=[SelectViewController alloc];
@@ -28,6 +44,31 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
+//    CLLocationManager *locationManager=[[CLLocationManager alloc] init];
+//
+//
+//    if ([CLLocationManager locationServicesEnabled]) {
+//        NSLog(@"开始执行定位服务");
+//        //设置定位精度：最佳精度
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+//        //设置距离过滤器为50米，表示每移动50米更新一次位置
+//        //将试图控制器自身设置为CLLocationManager的delegate
+//        //因此该试图控制器需要实现CLLocationManagerDelegate协议
+//        locationManager.delegate = self;
+//        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+//        {
+//            [locationManager requestWhenInUseAuthorization];
+//            [locationManager requestAlwaysAuthorization];
+//        }
+//        //开始监听定位信息
+//        [locationManager startUpdatingLocation];
+//    }else{
+//        NSLog(@"无法使用定位服务！！！");
+//    }
+    
+    
+    
+      [[LocationManagerData sharedManager] getLocalationPoint];
     return YES;
 }
 

@@ -61,6 +61,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+<<<<<<< HEAD
     [self.view addSubview:self.bgview];
     [self initprama];
     [self draw];
@@ -86,6 +87,12 @@
     [self.bgview addSubview:label];
     
     
+=======
+
+    ViewController *vc = [[ViewController alloc] init];
+    
+    [[self navigationController]pushViewController:vc animated:false];
+>>>>>>> 24c82cf95cd676d86cea378bec04d12feac71ad4
     
    
 }
@@ -106,6 +113,7 @@
 
 
 
+<<<<<<< HEAD
 #pragma-BackGroundV
 - (void)initprama{
     _screenWidth=[UIScreen mainScreen].bounds.size.width;
@@ -116,6 +124,9 @@
         cirlemodel *cirle=[[cirlemodel alloc]initModelWith:[self randomBetween:0 And:self.screenWidth] andy:[self randomBetween:0 And:self.screenHeight] andwidth:[self randomBetween:1 And:9] andOffsetX:[self randomBetween:10 And:-10]/40 andOffsetY:[self randomBetween:10 And:-10]/40];
         [_cirleArry addObject:cirle];
     }
+=======
+-(void)createHudView{
+>>>>>>> 24c82cf95cd676d86cea378bec04d12feac71ad4
     
 }
 
@@ -356,6 +367,7 @@
     return YES;
 }
 
+<<<<<<< HEAD
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
@@ -407,6 +419,11 @@
     CGPathRelease(solidPath);
     [self.bgview.layer addSublayer:solidLine];
     
+=======
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+>>>>>>> 24c82cf95cd676d86cea378bec04d12feac71ad4
 }
 
 /*
