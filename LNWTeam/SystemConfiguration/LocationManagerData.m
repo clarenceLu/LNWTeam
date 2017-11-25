@@ -36,7 +36,7 @@
     [self requestWhenInUseAuthorization];
     [self requestAlwaysAuthorization];
     [self startUpdatingLocation];
-     [self startUpdatingHeading];
+    [self startUpdatingHeading];
 }
 
 
@@ -46,11 +46,11 @@
 
     CGFloat angle = newHeading.magneticHeading * M_PI / 180;
     
+    NSLog(@"%f",newHeading.magneticHeading);
+    
     _direction =angle;
     
 }
-
-
 
 
 - (void)locationManager:(CLLocationManager *)manager

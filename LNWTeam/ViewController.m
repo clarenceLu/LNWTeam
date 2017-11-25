@@ -122,9 +122,9 @@
     [[self view] addSubview:directionImage];
     
     lable = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    [lable setTextColor:[UIColor redColor]];
     lable.text = [NSString stringWithFormat:@"%f    %f",[LocationManagerData sharedManager].LocationPoint_xy.x,[LocationManagerData sharedManager].LocationPoint_xy.y];
     [[self view] addSubview:lable];
-
     
     
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(setLableText) userInfo:nil repeats:true];
@@ -136,15 +136,21 @@
     
     int multiplier = 1000000;
     
-    float target_x = 118.46*multiplier;
-    float target_Y = 32.03*multiplier;
+    float target_x = 125.52*multiplier;
+    float target_Y = 35.33*multiplier;
     
     
     float local_x =[LocationManagerData sharedManager].LocationPoint_xy.x *multiplier;
     float local_y =[LocationManagerData sharedManager].LocationPoint_xy.y *multiplier;
 
     
+    float line1 = abs((int)(target_x-local_x));
+    float line2 = abs((int)(local_y-target_Y));
     
+    float line3 = sqrt((target_x-local_x)*(target_x-local_x)+(target_Y-local_y)*(target_Y-local_y));
+    
+    
+    float limit = atan(line1/line2);
     
     
      lable.text = [NSString stringWithFormat:@"%f   %f",[LocationManagerData sharedManager].LocationPoint_xy.x,[LocationManagerData sharedManager].LocationPoint_xy.y];
@@ -152,7 +158,28 @@
     
     NSLog(@"%f",-[LocationManagerData sharedManager].direction);
     
-    directionImage.transform = CGAffineTransformMakeRotation(-[LocationManagerData sharedManager].direction);
+    if(local_y<target_Y){
+    
+    
+    if(target_x>local_x){
+        
+         directionImage.transform = CGAffineTransformMakeRotation(-[LocationManagerData sharedManager].direction+limit);
+    }else{
+
+         directionImage.transform = CGAffineTransformMakeRotation(-[LocationManagerData sharedManager].direction-limit);
+        
+    }
+        
+    }else{
+        if(target_x>local_x){
+            
+            directionImage.transform = CGAffineTransformMakeRotation(-[LocationManagerData sharedManager].direction+(3.14-limit));
+        }else{
+            
+            directionImage.transform = CGAffineTransformMakeRotation(-[LocationManagerData sharedManager].direction+(limit-3.14));
+            
+        }
+    }
 }
 
 
