@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B237C45D1FC9CD1900C39C55 /* btn_login.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C45C1FC9CD1900C39C55 /* btn_login.png */; };
+		B237C4611FC9D23A00C39C55 /* bg_textField.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4601FC9D23900C39C55 /* bg_textField.png */; };
+		B237C4631FC9F7AA00C39C55 /* refuseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4621FC9F7AA00C39C55 /* refuseBtn.png */; };
+		B237C4651FC9F7CC00C39C55 /* btn_jump.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4641FC9F7CC00C39C55 /* btn_jump.png */; };
+		B237C4671FC9F7D800C39C55 /* btn_PhotoClose.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4661FC9F7D800C39C55 /* btn_PhotoClose.png */; };
+		B237C4691FC9F7F400C39C55 /* btn_ticketBack.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4681FC9F7F400C39C55 /* btn_ticketBack.png */; };
+		B237C46B1FC9F82B00C39C55 /* btn_add.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C46A1FC9F82B00C39C55 /* btn_add.png */; };
+		B237C46D1FC9F83B00C39C55 /* activity_follow.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C46C1FC9F83B00C39C55 /* activity_follow.png */; };
+		B237C4701FCA00F000C39C55 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B237C46F1FCA00F000C39C55 /* SearchViewController.m */; };
+		B237C4721FCA02F800C39C55 /* chatlist_serach.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4711FCA02F800C39C55 /* chatlist_serach.png */; };
+		B237C4781FCA076200C39C55 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = B237C4771FCA076200C39C55 /* search.png */; };
+		B2C940ED1FC957E1005098EC /* SelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C940EC1FC957E1005098EC /* SelectViewController.m */; };
+		B2C940F51FC95876005098EC /* CCDraggableCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C940F01FC95876005098EC /* CCDraggableCardView.m */; };
+		B2C940F61FC95876005098EC /* CCDraggableContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C940F11FC95876005098EC /* CCDraggableContainer.m */; };
+		B2C940F91FC95A5F005098EC /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C940F81FC95A5F005098EC /* SelectView.m */; };
+		B2C940FB1FC9928B005098EC /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C940FA1FC9928B005098EC /* login.png */; };
 		C4670FAF1FC92E9900B59930 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4670FAE1FC92E9900B59930 /* AppDelegate.m */; };
 		C4670FB11FC92E9900B59930 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C4670FB01FC92E9900B59930 /* art.scnassets */; };
 		C4670FB41FC92E9900B59930 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4670FB31FC92E9900B59930 /* ViewController.m */; };
@@ -63,6 +79,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B237C45C1FC9CD1900C39C55 /* btn_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_login.png; sourceTree = "<group>"; };
+		B237C4601FC9D23900C39C55 /* bg_textField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_textField.png; sourceTree = "<group>"; };
+		B237C4621FC9F7AA00C39C55 /* refuseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refuseBtn.png; sourceTree = "<group>"; };
+		B237C4641FC9F7CC00C39C55 /* btn_jump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_jump.png; sourceTree = "<group>"; };
+		B237C4661FC9F7D800C39C55 /* btn_PhotoClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_PhotoClose.png; sourceTree = "<group>"; };
+		B237C4681FC9F7F400C39C55 /* btn_ticketBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_ticketBack.png; sourceTree = "<group>"; };
+		B237C46A1FC9F82B00C39C55 /* btn_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_add.png; sourceTree = "<group>"; };
+		B237C46C1FC9F83B00C39C55 /* activity_follow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activity_follow.png; sourceTree = "<group>"; };
+		B237C46E1FCA00F000C39C55 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		B237C46F1FCA00F000C39C55 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		B237C4711FCA02F800C39C55 /* chatlist_serach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatlist_serach.png; sourceTree = "<group>"; };
+		B237C4771FCA076200C39C55 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		B2C940EB1FC957E1005098EC /* SelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectViewController.h; sourceTree = "<group>"; };
+		B2C940EC1FC957E1005098EC /* SelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectViewController.m; sourceTree = "<group>"; };
+		B2C940F01FC95876005098EC /* CCDraggableCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDraggableCardView.m; sourceTree = "<group>"; };
+		B2C940F11FC95876005098EC /* CCDraggableContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDraggableContainer.m; sourceTree = "<group>"; };
+		B2C940F21FC95876005098EC /* CCDraggableCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDraggableCardView.h; sourceTree = "<group>"; };
+		B2C940F31FC95876005098EC /* CCDraggableConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDraggableConfig.h; sourceTree = "<group>"; };
+		B2C940F41FC95876005098EC /* CCDraggableContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDraggableContainer.h; sourceTree = "<group>"; };
+		B2C940F71FC95A5F005098EC /* SelectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectView.h; sourceTree = "<group>"; };
+		B2C940F81FC95A5F005098EC /* SelectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectView.m; sourceTree = "<group>"; };
+		B2C940FA1FC9928B005098EC /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		C4670FAA1FC92E9900B59930 /* LNWTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNWTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4670FAD1FC92E9900B59930 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4670FAE1FC92E9900B59930 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -182,6 +220,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B2C940EE1FC95842005098EC /* SelectGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B2C940EF1FC95876005098EC /* CCDraggableCard */,
+				B2C940EB1FC957E1005098EC /* SelectViewController.h */,
+				B2C940EC1FC957E1005098EC /* SelectViewController.m */,
+				B2C940F71FC95A5F005098EC /* SelectView.h */,
+				B2C940F81FC95A5F005098EC /* SelectView.m */,
+				B237C46A1FC9F82B00C39C55 /* btn_add.png */,
+				B237C4681FC9F7F400C39C55 /* btn_ticketBack.png */,
+				B237C4661FC9F7D800C39C55 /* btn_PhotoClose.png */,
+				B237C4621FC9F7AA00C39C55 /* refuseBtn.png */,
+				B237C4641FC9F7CC00C39C55 /* btn_jump.png */,
+				B237C46C1FC9F83B00C39C55 /* activity_follow.png */,
+			);
+			path = SelectGroup;
+			sourceTree = "<group>";
+		};
+		B2C940EF1FC95876005098EC /* CCDraggableCard */ = {
+			isa = PBXGroup;
+			children = (
+				B2C940F01FC95876005098EC /* CCDraggableCardView.m */,
+				B2C940F11FC95876005098EC /* CCDraggableContainer.m */,
+				B2C940F21FC95876005098EC /* CCDraggableCardView.h */,
+				B2C940F31FC95876005098EC /* CCDraggableConfig.h */,
+				B2C940F41FC95876005098EC /* CCDraggableContainer.h */,
+			);
+			name = CCDraggableCard;
+			path = LNWTeam/CCDraggableCard;
+			sourceTree = SOURCE_ROOT;
+		};
 		C4670FA11FC92E9900B59930 = {
 			isa = PBXGroup;
 			children = (
@@ -205,8 +274,16 @@
 				C4670FC81FC934AC00B59930 /* Framewrok */,
 				C4670FC51FC92F2B00B59930 /* LoginViewContoller.h */,
 				C4670FC61FC92F2B00B59930 /* LoginViewContoller.m */,
+				B2C940FA1FC9928B005098EC /* login.png */,
+				B237C45C1FC9CD1900C39C55 /* btn_login.png */,
+				B237C4601FC9D23900C39C55 /* bg_textField.png */,
+				B2C940EE1FC95842005098EC /* SelectGroup */,
 				C4670FAD1FC92E9900B59930 /* AppDelegate.h */,
 				C4670FAE1FC92E9900B59930 /* AppDelegate.m */,
+				B237C46E1FCA00F000C39C55 /* SearchViewController.h */,
+				B237C46F1FCA00F000C39C55 /* SearchViewController.m */,
+				B237C4711FCA02F800C39C55 /* chatlist_serach.png */,
+				B237C4771FCA076200C39C55 /* search.png */,
 				C4670FB01FC92E9900B59930 /* art.scnassets */,
 				C4670FB21FC92E9900B59930 /* ViewController.h */,
 				C4670FB31FC92E9900B59930 /* ViewController.m */,
@@ -443,9 +520,20 @@
 				C4670FB11FC92E9900B59930 /* art.scnassets in Resources */,
 				C4670FBC1FC92E9900B59930 /* LaunchScreen.storyboard in Resources */,
 				C46710121FC9355D00B59930 /* blueArrowDown@2x.png in Resources */,
+				B237C4781FCA076200C39C55 /* search.png in Resources */,
 				C46710101FC9355D00B59930 /* blueArrow@2x.png in Resources */,
+				B237C4671FC9F7D800C39C55 /* btn_PhotoClose.png in Resources */,
 				C4670FB91FC92E9900B59930 /* Assets.xcassets in Resources */,
+				B237C46B1FC9F82B00C39C55 /* btn_add.png in Resources */,
+				B237C4721FCA02F800C39C55 /* chatlist_serach.png in Resources */,
+				B2C940FB1FC9928B005098EC /* login.png in Resources */,
+				B237C46D1FC9F83B00C39C55 /* activity_follow.png in Resources */,
+				B237C4651FC9F7CC00C39C55 /* btn_jump.png in Resources */,
+				B237C4631FC9F7AA00C39C55 /* refuseBtn.png in Resources */,
+				B237C4691FC9F7F400C39C55 /* btn_ticketBack.png in Resources */,
+				B237C45D1FC9CD1900C39C55 /* btn_login.png in Resources */,
 				C4670FB71FC92E9900B59930 /* Main.storyboard in Resources */,
+				B237C4611FC9D23A00C39C55 /* bg_textField.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C940ED1FC957E1005098EC /* SelectViewController.m in Sources */,
 				C4670FFE1FC934AC00B59930 /* AFURLSessionManager.m in Sources */,
 				C4670FFD1FC934AC00B59930 /* AFURLConnectionOperation.m in Sources */,
 				C4670FB41FC92E9900B59930 /* ViewController.m in Sources */,
@@ -469,6 +558,7 @@
 				C46710571FC9362900B59930 /* NSData+ImageContentType.m in Sources */,
 				C46710541FC9362900B59930 /* SDWebImagePrefetcher.m in Sources */,
 				C467100F1FC9355D00B59930 /* MBProgressHUD.m in Sources */,
+				B237C4701FCA00F000C39C55 /* SearchViewController.m in Sources */,
 				C4670FF51FC934AC00B59930 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				C46710551FC9362900B59930 /* SDImageCache.m in Sources */,
 				C46710501FC9362900B59930 /* SDWebImageDownloader.m in Sources */,
@@ -484,10 +574,12 @@
 				C46710561FC9362900B59930 /* SDWebImageDownloaderOperation.m in Sources */,
 				C4670FF91FC934AC00B59930 /* UIWebView+AFNetworking.m in Sources */,
 				C467104F1FC9362900B59930 /* UIImageView+HighlightedWebCache.m in Sources */,
+				B2C940F91FC95A5F005098EC /* SelectView.m in Sources */,
 				C46710011FC934AC00B59930 /* AFHTTPRequestOperation.m in Sources */,
 				C46710001FC934AC00B59930 /* AFURLRequestSerialization.m in Sources */,
 				C46710251FC935A000B59930 /* LooperToolClass.m in Sources */,
 				C46710591FC9362900B59930 /* UIView+WebCacheOperation.m in Sources */,
+				B2C940F51FC95876005098EC /* CCDraggableCardView.m in Sources */,
 				C46710221FC935A000B59930 /* LocationManagerData.m in Sources */,
 				C46710261FC935A000B59930 /* Base64Class.m in Sources */,
 				C46710581FC9362900B59930 /* UIImageView+WebCache.m in Sources */,
@@ -497,6 +589,7 @@
 				C467104C1FC9362900B59930 /* MKAnnotationView+WebCache.m in Sources */,
 				C4670FFA1FC934AC00B59930 /* AFNetworkTool.m in Sources */,
 				C4670FFC1FC934AC00B59930 /* AFHTTPSessionManager.m in Sources */,
+				B2C940F61FC95876005098EC /* CCDraggableContainer.m in Sources */,
 				C4670FFB1FC934AC00B59930 /* AFURLResponseSerialization.m in Sources */,
 				C46710031FC934AC00B59930 /* AFSecurityPolicy.m in Sources */,
 				C46710111FC9355D00B59930 /* PullingRefreshTableView.m in Sources */,

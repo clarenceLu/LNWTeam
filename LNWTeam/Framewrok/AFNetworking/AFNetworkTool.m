@@ -11,7 +11,7 @@
 #import "DataHander.h"
 #import "NSString +AES256.h"
 
-#define URL_STR @"http://api2.innfinityar.com/web/"
+#define URL_STR @"http://91cp.xin/api/thon/"
 //#define URL_STR @"http://api3.innfinityar.com/web/"
 
 #define URL_JAVA_STR @"http://api2.innfinityar.com/web/"
@@ -127,7 +127,7 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     // 设置请求格式
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    NSString* url = [NSString stringWithFormat:@"%@%@",URL_STR,urlStr];
+    NSString* url = urlStr;
     
     NSDate *now= [NSDate date];
     long int nowDate = (long int)([now timeIntervalSince1970]);
@@ -135,12 +135,6 @@
     
     NSData *data = [time dataUsingEncoding:NSUTF8StringEncoding];
     NSString *stringBase64 = [data base64Encoding]; // base64格式的字符串
-    
-
-    NSString *aes1= [time aes256_encrypt:Looperkey];
-    NSLog(@"%@",aes1);
-    [parameters setObject:aes1 forKey:@"token"];
-    [parameters setObject:[NSString stringWithFormat:@"%ld",nowDate] forKey:@"timestamp"];
 
     
     if([urlStr isEqualToString:@"getFriendList"]||[urlStr isEqualToString:@"followUser"]||[urlStr isEqualToString:@"getUserById"]||[urlStr isEqualToString:@"unfollowUser"]||[urlStr isEqualToString:@"addPreferenceToComment"]||[urlStr isEqualToString:@"sendYunXinMessage"]||[urlStr isEqualToString:@"getThumbUpCount"]||[urlStr isEqualToString:@"getMyMessage"]||[urlStr isEqualToString:@"leaveLoop"]||[urlStr isEqualToString:@"getLoopByCoordinates"]||[urlStr isEqualToString:@"getUserInfo"]||[urlStr isEqualToString:@"sendYunXinMessage"]||[urlStr isEqualToString:@"getLoopMessage"]||[urlStr isEqualToString:@"getMyFavorite"]||[urlStr isEqualToString:@"getHome"]||[urlStr isEqualToString:@"getChatMessage"]||[urlStr isEqualToString:@"thumbActivityMessage"]||[urlStr isEqualToString:@"getActivityInfo"]||[urlStr isEqualToString:@"thumbBoardMessage"]||[urlStr isEqualToString:@"followBrand"]||[urlStr isEqualToString:@"getHeartBeat"]){

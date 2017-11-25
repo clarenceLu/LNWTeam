@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LoginViewContoller.h"
-
-@interface AppDelegate ()
+#import "SelectViewController.h"
+@interface AppDelegate ()<UINavigationControllerDelegate>
 
 @end
 
@@ -19,9 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    LoginViewContoller *loginVc = [[LoginViewContoller alloc] init];
-    //  ShoppingViewController *start=[ShoppingViewController alloc];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginVc];
+    LoginViewContoller *start = [[LoginViewContoller alloc] init];
+//      SelectViewController *start=[SelectViewController alloc];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:start];
     nav.delegate = self;
     nav.navigationBar.hidden = YES;
     nav.interactivePopGestureRecognizer.enabled = YES;
