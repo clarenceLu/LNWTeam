@@ -20,12 +20,13 @@
     // Do any additional setup after loading the view.
     
 
-    //ViewController *vc = [[ViewController alloc] init];
+    ViewController *vc = [[ViewController alloc] init];
     
-  //  [[self navigationController]pushViewController:vc animated:false];
+    [[self navigationController]pushViewController:vc animated:false];
     
     [self createHudView];
 }
+
 
 
 -(void)createHudView{
@@ -36,11 +37,6 @@
     
     
 }
-
-
-
-
-
 
 
 - (void)didReceiveMemoryWarning {

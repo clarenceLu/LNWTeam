@@ -15,6 +15,7 @@
 {
     
     CGPoint LocationPoint_xy;
+    float  direction;
 
 }
 
@@ -22,5 +23,5 @@
 -(void)getLocalationPoint;
 
 @property(nonatomic)CGPoint LocationPoint_xy;
-
+@property(nonatomic)float  direction;
 @end

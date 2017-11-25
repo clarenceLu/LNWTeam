@@ -14,6 +14,7 @@
 @implementation LocationManagerData
 
 @synthesize LocationPoint_xy = _LocationPoint_xy;
+@synthesize direction = _direction;
 
 + (instancetype)sharedManager
 {
@@ -31,11 +32,24 @@
 -(void)getLocalationPoint{
     self.delegate=self;
     //设置定位精度：最佳精度
-    self.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
+    self.desiredAccuracy = kCLLocationAccuracyBest;
     [self requestWhenInUseAuthorization];
     [self requestAlwaysAuthorization];
     [self startUpdatingLocation];
+     [self startUpdatingHeading];
 }
+
+
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+{
+
+    CGFloat angle = newHeading.magneticHeading * M_PI / 180;
+    
+    _direction =angle;
+    
+}
+
 
 
 
@@ -45,7 +59,6 @@
     CLLocation *location=[locations firstObject];
     
     CLLocationCoordinate2D coordinate=location.coordinate;
-    
     
     NSLog(@"您的当前位置:经度：%f,纬度：%f,海拔：%f,航向：%f,速度：%f",coordinate.longitude,coordinate.latitude,location.altitude,location.course,location.speed);
 
