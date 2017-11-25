@@ -9,9 +9,7 @@
 #import "AppDelegate.h"
 #import "LoginViewContoller.h"
 #import "SelectViewController.h"
-@interface AppDelegate ()<UINavigationControllerDelegate>
 #import "LocationManagerData.h"
-
 
 
 @implementation AppDelegate 
@@ -68,7 +66,7 @@
     
     
     
-      [[LocationManagerData sharedManager] getLocalationPoint];
+//      [[LocationManagerData sharedManager] getLocalationPoint];
     return YES;
 }
 

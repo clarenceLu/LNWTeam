@@ -61,15 +61,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-<<<<<<< HEAD
     [self.view addSubview:self.bgview];
     [self initprama];
     [self draw];
     _timer=[NSTimer scheduledTimerWithTimeInterval:0.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
-    
     [self getCreditHistory];
-    
-    
       [self initBtn];
     
 }
@@ -85,14 +81,6 @@
     label.font=[UIFont boldSystemFontOfSize:24];
     label.textAlignment=NSTextAlignmentCenter;
     [self.bgview addSubview:label];
-    
-    
-=======
-
-    ViewController *vc = [[ViewController alloc] init];
-    
-    [[self navigationController]pushViewController:vc animated:false];
->>>>>>> 24c82cf95cd676d86cea378bec04d12feac71ad4
     
    
 }
@@ -113,7 +101,6 @@
 
 
 
-<<<<<<< HEAD
 #pragma-BackGroundV
 - (void)initprama{
     _screenWidth=[UIScreen mainScreen].bounds.size.width;
@@ -124,12 +111,7 @@
         cirlemodel *cirle=[[cirlemodel alloc]initModelWith:[self randomBetween:0 And:self.screenWidth] andy:[self randomBetween:0 And:self.screenHeight] andwidth:[self randomBetween:1 And:9] andOffsetX:[self randomBetween:10 And:-10]/40 andOffsetY:[self randomBetween:10 And:-10]/40];
         [_cirleArry addObject:cirle];
     }
-=======
--(void)createHudView{
->>>>>>> 24c82cf95cd676d86cea378bec04d12feac71ad4
-    
 }
-
 
 - (void)run{
     [self.bgview removeFromSuperview];
@@ -296,7 +278,7 @@
     }
 }
 -(UILabel *)createLB:(NSString *)text andPoint:(CGPoint)point{
-    UILabel *phoneLB=[[UILabel alloc]initWithFrame:CGRectMake(point.x, point.y, 300*DEF_Adaptation_Font*0.5, 50*DEF_Adaptation_Font*0.5)];
+    UILabel *phoneLB=[[UILabel alloc]initWithFrame:CGRectMake(point.x, point.y, 500*DEF_Adaptation_Font*0.5, 50*DEF_Adaptation_Font*0.5)];
     phoneLB.text=text;
     phoneLB.textColor=[UIColor grayColor];
     phoneLB.font=[UIFont boldSystemFontOfSize:12*DEF_Adaptation_Font];
@@ -367,10 +349,9 @@
     return YES;
 }
 
-<<<<<<< HEAD
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.view endEditing:YES];
+    [[[UIApplication sharedApplication].delegate window] endEditing:YES];
 }
 
 
@@ -418,14 +399,7 @@
     solidLine.path = solidPath;
     CGPathRelease(solidPath);
     [self.bgview.layer addSublayer:solidLine];
-    
-=======
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
->>>>>>> 24c82cf95cd676d86cea378bec04d12feac71ad4
 }
-
 /*
  划线
  */

@@ -1,14 +1,7 @@
-//
-//  LocationManagerData.h
-//  Looper
-//
-//  Created by lujiawei on 24/08/2017.
-//  Copyright © 2017 lujiawei. All rights reserved.
-//
 
 #import <CoreLocation/CoreLocation.h>
 #import <UIKit/UIKit.h>
-
+#import <Foundation/Foundation.h>
 @interface LocationManagerData : CLLocationManager <CLLocationManagerDelegate>
 {
 
@@ -22,5 +15,7 @@
 
 @property(nonatomic)CGPoint LocationPoint_xy;
 @property(nonatomic)float  direction;
+
 @end
+
 

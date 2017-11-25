@@ -9,6 +9,7 @@
 #import "SearchViewController.h"
 #import "LooperToolClass.h"
 #import "LooperConfig.h"
+#import "ViewController.h"
 @interface SearchViewController ()<UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource>
 {
     UISearchBar*  mySeatchBar;
@@ -144,7 +145,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSLog(@"选择了列表中的%@", [self.searchDatas objectAtIndex:indexPath.row]);
-    
+    ViewController *vc = [[ViewController alloc] init];
+    [[self navigationController]pushViewController:vc animated:false];
 }
 
 
