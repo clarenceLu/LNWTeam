@@ -67,7 +67,7 @@
     txfSearchField.clearButtonMode=UITextFieldViewModeNever;
 }
 -(void)updateData{
-    _searchDatas=@[@"驾车模式",@"步行模式",@"公车模式",@"骑行模式"];
+    _searchDatas=@[@"驾车模式",@"步行模式",@"公车模式",@"骑行模式",@"飞行模式",@"私人游模式",@"快速非拥挤模式",@"最近省油模式",@"自定义模式"];
     [self.tableView reloadData];
 }
 - (IBAction)btnOnClick:(UIButton *)button withEvent:(UIEvent *)event{
