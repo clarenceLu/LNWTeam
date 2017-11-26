@@ -120,7 +120,17 @@
     lable.text = [NSString stringWithFormat:@"%f    %f",[LocationManagerData sharedManager].LocationPoint_xy.x,[LocationManagerData sharedManager].LocationPoint_xy.y];
     [[self view] addSubview:lable];
     
+    UIView *noitifationV = [[UIView alloc] initWithFrame:CGRectMake(0, DEF_SCREEN_HEIGHT-50, DEF_SCREEN_WIDTH, 50)];
+    [noitifationV setBackgroundColor:[UIColor grayColor]];
+    [[self view]addSubview:noitifationV];
     
+    UILabel* Notification = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, DEF_SCREEN_WIDTH, 50)];
+    [Notification setTextColor:[UIColor whiteColor]];
+    Notification.text = @"Notification message";
+    [noitifationV addSubview:Notification];
+    
+    
+
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(setLableText) userInfo:nil repeats:true];
     [timer fire];
     
