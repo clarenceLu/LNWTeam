@@ -174,19 +174,19 @@
     
 }
 -(void)initBtn{
-    [self createLB:@"手机号" andPoint:CGPointMake(106*DEF_Adaptation_Font*0.5, 680*DEF_Adaptation_Font*0.5)];
-    [self createLB:@"验证码" andPoint:CGPointMake(106*DEF_Adaptation_Font*0.5, 830*DEF_Adaptation_Font*0.5)];
-    phoneText=[self createTextField:@"" andImg:@"bg_textField.png" andRect:CGRectMake(106, 740, 428, 50) andTag:100];
+    [self createLB:@"手机号" andPoint:CGPointMake(106*DEF_Adaptation_Font*0.5, 530*DEF_Adaptation_Font*0.5)];
+    [self createLB:@"验证码" andPoint:CGPointMake(106*DEF_Adaptation_Font*0.5, 680*DEF_Adaptation_Font*0.5)];
+    phoneText=[self createTextField:@"" andImg:@"bg_textField.png" andRect:CGRectMake(106, 590, 428, 50) andTag:100];
     [phoneText becomeFirstResponder];
-    codeText=[self createTextField:@"" andImg:@"bg_textField.png" andRect:CGRectMake(106, 890, 428, 50) andTag:101];
-    sendBtn =[LooperToolClass createBtnImageNameReal:nil andRect:CGPointMake(393*DEF_Adaptation_Font*0.5,880*DEF_Adaptation_Font*0.5) andTag:1001 andSelectImage:nil andClickImage:nil andTextStr:nil andSize:CGSizeMake(160*DEF_Adaptation_Font*0.5,40*DEF_Adaptation_Font*0.5) andTarget:self];
+    codeText=[self createTextField:@"" andImg:@"bg_textField.png" andRect:CGRectMake(106, 740, 428, 50) andTag:101];
+    sendBtn =[LooperToolClass createBtnImageNameReal:nil andRect:CGPointMake(393*DEF_Adaptation_Font*0.5,730*DEF_Adaptation_Font*0.5) andTag:1001 andSelectImage:nil andClickImage:nil andTextStr:nil andSize:CGSizeMake(160*DEF_Adaptation_Font*0.5,40*DEF_Adaptation_Font*0.5) andTarget:self];
     [sendBtn setTitle:@"发送验证码" forState:(UIControlStateNormal)];
     sendBtn.titleLabel.font=[UIFont boldSystemFontOfSize:12*DEF_Adaptation_Font];
     [sendBtn setTitleColor:[UIColor grayColor] forState:(UIControlStateNormal)];
      [[[UIApplication sharedApplication].delegate window] addSubview:sendBtn];
     
     UIImage *image=[UIImage imageNamed:@"btn_login.png"];
-    backBtn=[LooperToolClass createBtnImageNameReal:@"btn_login.png" andRect:CGPointMake(DEF_WIDTH(self.view)/2-image.size.width/2, DEF_HEIGHT(self.view)-150*DEF_Adaptation_Font*0.5) andTag:1002 andSelectImage:nil andClickImage:nil andTextStr:nil andSize:CGSizeMake(image.size.width, image.size.height) andTarget:self];
+    backBtn=[LooperToolClass createBtnImageNameReal:@"btn_login.png" andRect:CGPointMake(DEF_WIDTH(self.view)/2-image.size.width/2, DEF_HEIGHT(self.view)-200*DEF_Adaptation_Font*0.5) andTag:1002 andSelectImage:nil andClickImage:nil andTextStr:nil andSize:CGSizeMake(image.size.width, image.size.height) andTarget:self];
 //最高权限
     [[[UIApplication sharedApplication].delegate window] addSubview:backBtn];
 
@@ -214,7 +214,7 @@
                 
                 downTimer =[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(downTimer) userInfo:nil repeats:YES];
                 
-                downNum = [LooperToolClass createLableView:CGPointMake(393*DEF_Adaptation_Font*0.5,890*DEF_Adaptation_Font*0.5) andSize:CGSizeMake(150*DEF_Adaptation_Font*0.5, 20*DEF_Adaptation_Font*0.5) andText:[NSString stringWithFormat: @"%d秒后可重发",downTime] andFontSize:10 andColor:[UIColor grayColor] andType:NSTextAlignmentRight];
+                downNum = [LooperToolClass createLableView:CGPointMake(393*DEF_Adaptation_Font*0.5,740*DEF_Adaptation_Font*0.5) andSize:CGSizeMake(150*DEF_Adaptation_Font*0.5, 20*DEF_Adaptation_Font*0.5) andText:[NSString stringWithFormat: @"%d秒后可重发",downTime] andFontSize:10 andColor:[UIColor grayColor] andType:NSTextAlignmentRight];
                 [[[UIApplication sharedApplication].delegate window] addSubview:downNum];
             }else{
                 [[DataHander sharedDataHander] showViewWithStr:@"输入手机号码错误" andTime:1 andPos:CGPointZero];
