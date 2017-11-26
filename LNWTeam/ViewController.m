@@ -85,12 +85,6 @@
 //            NSLog(@"angleY%f",angleY);
 //            NSLog(@"angleZ%f",angleZ);
             
-            
-            
-            
-            
-            
-            
         }];
         
         
