@@ -273,7 +273,7 @@
     }else{
         imageObj=[[UIImageView alloc] initWithFrame:CGRectMake(DEF_SCREEN_WIDTH/2-60, DEF_SCREEN_HEIGHT/2-60, 120, 120)];
     }
-    imageObj.animationImages = [LooperToolClass initialImageArray:imageName andImageCount:count];
+//    imageObj.animationImages = [LooperToolClass initialImageArray:imageName andImageCount:count];
     imageObj.animationDuration = Duraction;
     imageObj.animationRepeatCount = 0;
     [imageObj startAnimating];//开始动画

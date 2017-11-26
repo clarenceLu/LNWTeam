@@ -8,13 +8,9 @@
 
 #import "AppDelegate.h"
 #import "LoginViewContoller.h"
+#import "SelectViewController.h"
 #import "LocationManagerData.h"
 
-
-
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate 
 
@@ -37,9 +33,9 @@
 //
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    LoginViewContoller *loginVc = [[LoginViewContoller alloc] init];
-    //  ShoppingViewController *start=[ShoppingViewController alloc];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginVc];
+    LoginViewContoller *start = [[LoginViewContoller alloc] init];
+//      SelectViewController *start=[SelectViewController alloc];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:start];
     nav.delegate = self;
     nav.navigationBar.hidden = YES;
     nav.interactivePopGestureRecognizer.enabled = YES;
@@ -70,7 +66,7 @@
     
     
     
-      [[LocationManagerData sharedManager] getLocalationPoint];
+//      [[LocationManagerData sharedManager] getLocalationPoint];
     return YES;
 }
 
